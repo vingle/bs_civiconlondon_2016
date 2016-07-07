@@ -1,0 +1,246 @@
+/*******************************************************************************
+
+	CiviCon London 2016: Nic Wistreich
+
+> colours:
+dark slate - #15161d
+> fonts:
+
+*******************************************************************************/
+/*********************************** Typography *******************************/
+/******************************************************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600);
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:400,700);
+
+/***** Main typography *****/
+
+body {
+	font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+	font-weight: 300;
+}
+
+h4, h5, h6 {
+	font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+	font-weight: 600;
+}
+h1, h2, h3 {
+	font-family: 'Rokkitt', sans-serif;
+	font-weight: 700;
+}
+b, strong {
+	font-weight: 600;
+}
+p {
+	font-size: 20px;
+	line-height: 24px;
+}
+.page-header {
+	font-weight: 700;
+	font-size: 52px;
+}
+.jumbotron {
+	padding: 0px !important;
+	background-color: transparent;
+	color: #222;
+}
+.jumbotron h1, .jumbotron .h1 {
+	font-size: 42px;
+	font-family: 'Rokkitt', sans-serif;
+	font-weight: 700;
+    margin-top: -5px;
+    margin-bottom: 22px;
+    color: #fff !important;
+}
+.jumbotron p {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 300;
+}
+p.conf-details {
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+}
+.front .page-header {
+	display: none;
+}
+
+
+/******************************************************************************/
+/*********************************** Navigation *******************************/
+/******************************************************************************/
+
+/***** Main navigation menu *****/
+
+.navbar {
+	border-radius: 0px;
+	position: relative;
+    padding: 0px 0px 16px 0px;
+    background: url('/themes/bs_civiconlondon_2016/images/header.jpg');
+    background-position: center -130px;
+    overflow: hidden;
+    min-height: 300px;
+    margin-bottom: 0px;
+}
+.header-container {
+	background-color: cadetblue !important;	
+	position: relative;
+    padding: 35px 0px 16px 0px;
+}
+.container-2 {
+	background-color: cadetblue !important;	
+	position: relative;
+    padding: 5px 0px 16px 0px;
+}
+.container-2 .container {
+	padding-bottom: 20px;
+}
+.container-1, .container-3 {
+	background-color: #fff;
+	position: relative;
+    padding: 35px 0px 16px 0px;
+}
+.front .main-container {
+	display: none;
+}
+.navbar:after, .container-1:after {
+	background: linear-gradient(-45deg, cadetblue 8px, transparent 0), linear-gradient(45deg, cadetblue 8px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 16px 16px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 16px;
+}
+.container-3:after {
+	background: linear-gradient(-45deg, #2c3e50 8px, transparent 0), linear-gradient(45deg, #2c3e50 8px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 16px 16px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 16px;
+}
+.header-container:after, .container-2:after {
+	background: linear-gradient(-45deg, #fff 8px, transparent 0), linear-gradient(45deg, #fff 8px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 16px 16px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 16px;
+
+}
+.navbar-default .navbar-collapse {
+	float: right;
+	margin-top: 25px;
+}
+.navbar-default .navbar-nav > li > a {
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 5px; 
+	margin: 0px 15px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+    border-bottom: 10px solid rgba(256,256,256,0.5);
+}
+.footer {
+	border-radius: 0px;
+	position: relative;
+    padding: 20px 20px 16px 20px;
+    background-color: #2c3e50 !important;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 0px !important;
+    border-top: 0px solid transparent;
+}
+.footer p {
+	font-size: 14px;
+}
+
+/******************************************************************************/
+/************************************ Blocks ***********************************/
+/******************************************************************************/
+
+/***** Generic page styling *****/
+
+#block-block-3 {
+	padding: 20px 0px;
+}
+
+#block-block-3 .grid,
+#block-block-4 .grid,
+#block-block-5 .grid {
+	margin: 0px -13px;
+}
+#block-block-3 h2,
+#block-block-4 h2,
+#block-block-5 h2 {
+	margin-bottom: 26px;
+	font-size: 34px;
+}
+#block-block-3 h3,
+#block-block-3 h5 {
+	font-weight: 600;
+    font-size: 22px;
+}
+#block-block-3 p.text-right,
+#block-block-4 p.text-right,
+#block-block-5 p.text-right {
+	float: right;
+	margin-top: 20px;
+}
+#block-block-5 p.text-right {
+	margin-bottom: 20px;
+}
+
+/******************************************************************************/
+/****************************** Media Queries *********************************/
+/******************************************************************************/
+
+@media screen and (max-width: 1600px) {
+}
+
+@media screen and (min-width: 861px) and (max-width: 1349px) {
+}
+
+@media screen and (max-width: 768px) {
+	.col-sm-3, .col-sm-4 {
+		margin-bottom: 20px;
+	}
+	.jumbotron h1, .jumbotron .h1 {
+		margin-top: 25px;
+	}
+	.navbar-default .navbar-collapse {
+		width: 100%;
+		float: none;
+		background-color: rgba(0,0,0,0.5);
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #1a242f;*/
+    color: #ffffff;
+    border-bottom: 0px solid transparent;
+}
+	.navbar-collapse {
+		border-top: 0px solid transparent;
+	}
+}
